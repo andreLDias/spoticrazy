@@ -59,7 +59,7 @@ export const getUserTopArtists = async (token) => {
       },
     })
 
-    return response.data
+    return response.data.items
   } catch (err) {
     history.push('/')
     throw err
@@ -78,7 +78,7 @@ export const getUserTopTracks = async (token) => {
       },
     })
 
-    return response.data
+    return response.data.items
   } catch (err) {
     history.push('/')
     throw err

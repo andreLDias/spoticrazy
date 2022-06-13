@@ -11,3 +11,7 @@ export const SCOPES = [
   'user-read-currently-playing',
   'user-read-playback-state',
 ]
+
+export const AUTH_PATH = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${SCOPES.join(
+  '%20'
+)}`

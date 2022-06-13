@@ -1,15 +1,17 @@
+import { AlbumImage, TrackName, Wrapper } from './tracksSection.styles'
+
 const TracksSection = ({ tracks }) => {
   if (!tracks || !tracks.length) return
 
   return tracks.map((track) => (
-    <div key={track.id}>
+    <Wrapper key={track.id}>
+      <TrackName>{track.name}</TrackName>
       {track.album.images.length ? (
-        <img width={'100%'} src={track.album.images[0].url} alt="" />
+        <AlbumImage src={track.album.images[0].url} alt="" />
       ) : (
         <div>No Image</div>
       )}
-      {track.name}
-    </div>
+    </Wrapper>
   ))
 }
 

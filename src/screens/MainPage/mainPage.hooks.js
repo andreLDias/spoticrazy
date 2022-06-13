@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 
 const useMainPage = () => {
-  const [searchKey, setSearchKey] = useState('')
   const [artists, setArtists] = useState([])
   const [tracks, setTracks] = useState([])
   const [token, setToken] = useState('')
@@ -30,8 +29,6 @@ const useMainPage = () => {
   }
 
   return {
-    searchKey,
-    setSearchKey,
     artists,
     setArtists,
     tracks,

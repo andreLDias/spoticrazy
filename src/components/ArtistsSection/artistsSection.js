@@ -3,7 +3,7 @@ import {
   ArtistImage,
   ArtistName,
   Wrapper,
-} from './artistsSection.styles'
+} from './ArtistsSection.styles'
 
 const ArtistsSection = ({ artists }) => {
   if (!artists.length) return

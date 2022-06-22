@@ -7,8 +7,8 @@ import {
   ButtonWrapper,
   Title,
   Wrapper,
-} from './mainPage.styles'
-import { useMainPage } from './mainPage.hooks'
+} from './MainPage.styles'
+import { useMainPage } from './MainPage.hooks'
 
 const MainPage = () => {
   // todo stop using sets directly, create handlers

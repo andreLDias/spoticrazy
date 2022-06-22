@@ -1,4 +1,4 @@
-import { AlbumImage, TrackName, Wrapper } from './tracksSection.styles'
+import { AlbumImage, TrackName, Wrapper } from './TracksSection.styles'
 
 const TracksSection = ({ tracks }) => {
   if (!tracks || !tracks.length) return

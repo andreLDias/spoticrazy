@@ -1,3 +1,3 @@
-import { ArtistsSection } from './artistsSection'
+import { ArtistsSection } from './ArtistsSection'
 
 export default ArtistsSection
